@@ -57,6 +57,15 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<!--   https://docs.github.com/en/actions/guides/publishing-java-packages-with-maven
+      https://maven.apache.org/pom.html#distribution-management -->
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/brettgpalmer/springcloud-naming-server</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
